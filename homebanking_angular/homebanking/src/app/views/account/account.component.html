@@ -1,0 +1,118 @@
+<style>
+ 
+ .row_logout{
+    display: flex;
+    justify-content: end;
+ }
+  body {
+     
+      background-image: url('../../assets/images/background.jpeg');
+        background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;      
+    margin:-8px;
+    
+      width: 101%;
+      height: 100vh;
+    }
+        .remover{
+            margin-left: 80px;
+            height: 200px;
+        width:200px;
+        margin-top:200px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;;
+        }
+    .adicionar{
+        
+        height: 200px;
+        width:200px;
+        margin-top:200px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;;
+    }
+    .card_saldo{
+        margin-top: 50px;
+        padding-left: 100px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 20px;;
+    }
+    .add{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .remove{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .text{
+        margin-top: 40px;;
+    }
+    .row_logout{
+        padding: 20px;
+    }
+</style>
+<body >
+    
+
+<div class="row_logout">
+    <button type="button" (click)="Out()" >sair</button>
+</div>
+
+<div>  
+  <div class="card_saldo">
+    
+    <p>Saldo atual: {{ saldo.saldo }}</p>
+</div>
+</div>
+<div class="row add">
+<div class="card adicionar">
+    <label for="campoNome">Adicione fundos</label>
+    <div class="form-group">
+        <div class="col-md-4 text">
+      
+          <input type="text" class="form-control" [(ngModel)]="utilizador.amount" id="amount" placeholder="Digite valor">
+        </div>
+      
+      </div>      
+      
+    <div class="col-md-4 text">
+    <button type="button" (click)="Depositar()" >Depositar</button>
+    
+    </div>
+</div>
+<div class="card remover">
+    <label for="campoNome">Retire fundos  </label>
+    <div class="form-group">
+        <div class="col-md-4 text">
+      
+          <input type="text" class="form-control" [(ngModel)]="utilizador2.amount" id="amount2" placeholder="Digite valor">
+        </div>
+      
+      </div>
+      
+      
+    <div class="col-md-4 text">
+    <button type="button" (click)="Remover()" >Retirar</button>
+    
+    </div>
+</div>
+
+</div>
+
+<div class="row remove">
+
+</div>
+
+
+</body>

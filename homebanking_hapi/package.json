@@ -1,0 +1,25 @@
+{
+  "name": "homebanking-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "start:app": "node src/app.js"
+
+   
+  },
+  "author": "Henrique Cartucho",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^16.1.8",
+    "@hapi/cookie": "^12.0.1",
+    "@hapi/hapi": "^21.3.2",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.2.0",
+    "hapi": "^18.1.0",
+    "hapi-auth-jwt2": "^10.4.0",
+    "jsonwebtoken": "^9.0.1",
+    "ng": "^0.0.0"
+  }
+}

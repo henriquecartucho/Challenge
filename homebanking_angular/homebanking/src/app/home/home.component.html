@@ -1,0 +1,70 @@
+
+
+  <style>
+    body{
+      display: block;
+      margin: -8px;
+      padding: 0px;
+    }
+    .buttons{
+      display: flex;
+      justify-content: center;
+    }
+    .login{
+      border-radius: 20px;;
+      padding: 50px;;
+      background-color: white;
+      align-items: center;
+      border: 1px solid black;
+    }
+  .row_data {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('../../assets/images/background.jpeg');
+        background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+      }
+
+      .text{
+        margin-top: 20px;
+      }
+  </style>
+  <body>
+    
+ 
+  <div class="row_data">
+   
+    <div class="card login">
+   <div class="form-group">
+    <div class="col-md-4 text">
+
+      <input type="email" class="form-control"[(ngModel)]="utilizador.email" id="email" placeholder="Digite o email">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4 text">
+
+      <input type="password" class="form-control" [(ngModel)]="utilizador.password" id="password" placeholder="Digite a senha">
+    </div>
+
+  </div>
+    <div class="row buttons">
+     <div class="col-md-4 text">
+    <button type="button" (click)="login()"outerLink="/account">Login</button>
+    </div>
+  </div>
+  <div class="row buttons">
+    <div class="col-md-4 text">
+      <button type="button" (click)="navigateToRegister()" >Registar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
